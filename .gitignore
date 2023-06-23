@@ -1,0 +1,16 @@
+# vscode
+.vscode
+
+# don't push the environment vars!
+.env
+
+# Built application files
+.DS*
+*.apk
+*.ap_
+*.aab
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+node_modules
