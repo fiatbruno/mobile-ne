@@ -4,6 +4,9 @@ import Register from "../screens/auth/register";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Login from "../screens/auth/login";
 import Home from "../screens/app/home";
+import TokenGeneration from "../screens/app/token-generation";
+import TokensByMeterNumber from "../screens/app/tokens-by-meter-number";
+import TokenValidation from "../screens/app/token-validation";
 
 export default function Navigator() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -56,7 +59,22 @@ export function AppNavigation() {
         component={Home}
         options={{ headerShown: false }}
       />
-            <Stack.Screen
+      <Stack.Screen
+        name="TokenGeneration"
+        component={TokenGeneration}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="TokensByMeterNumber"
+        component={TokensByMeterNumber}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="TokenValidation"
+        component={TokenValidation}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
         name="Auth"
         component={AuthNavigation}
         options={{ headerShown: false }}
